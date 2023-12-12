@@ -3,13 +3,12 @@
  * Do not include SCSS code in this file.
  */
 
-/**
- * Import variables
- */
-
 @tailwind base;
 @tailwind components;
 
+/**
+ * Import variables
+ */
 @import "variables";
 
 /**
@@ -20,6 +19,9 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "npm:@fontsource-variable/montserrat/index.css";
+@import "npm:@fontsource-variable/outfit/index.css";
 
 /**
  * Import layouts
@@ -27,6 +29,11 @@
  */
 
 @import "layouts/home";
+//@import "layouts/header";
+//@import "layouts/contacte";
+@import "layouts/participants";
+//@import "layouts/footer";
+
 @tailwind utilities;
 
 /**

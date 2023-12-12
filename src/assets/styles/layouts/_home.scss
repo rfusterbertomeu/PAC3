@@ -1,4 +1,6 @@
-html { height: 100%; }
+html {
+  height: 100%;
+}
 
 *,
 *::before,
@@ -13,9 +15,17 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: $secondary;
-  background-color: $bg-color-primary;
+
 }
 
-header { min-height: 10vh; }
-main   { min-height: 60vh; }
-footer { min-height: 30vh; }
+header {
+  min-height: 10vh;
+}
+
+main {
+  min-height: 60vh;
+}
+
+footer {
+  min-height: 30vh;
+}

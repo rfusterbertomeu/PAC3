@@ -1,6 +1,5 @@
 @layer base {
   .participants {
-    display: none;
 
     &__contenidor {
       container: participants / inline-size;
@@ -14,6 +13,10 @@
 }
 
 @layer components {
+  .card {
+    @apply max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden;
+  }
+
   .participant {
     margin-inline: 1rem;
     margin-block: 0.5rem;
