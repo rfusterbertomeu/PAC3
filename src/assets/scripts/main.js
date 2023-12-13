@@ -8,26 +8,14 @@
 /**
  * Write any other JavaScript below
  */
-const enllac_header = document.getElementsByClassName("header__enllac");
-const enllac_portada = document.getElementsByClassName("portada__enllac");
-const enllac_footer = document.getElementsByClassName("footer__enllac--menu");
+const enllac = document.getElementsByTagName("a");
 
-Array.from(enllac_header).forEach(function (enllac) {
-  enllac.addEventListener("click", function () {
-    const target = enllac.getAttribute("data-target");
-    mostra(target);
-  });
-});
-Array.from(enllac_portada).forEach(function (enllac) {
-  enllac.addEventListener("click", function () {
-    const target = enllac.getAttribute("data-target");
-    mostra(target);
-  });
-});
-Array.from(enllac_footer).forEach(function (enllac) {
-  enllac.addEventListener("click", function () {
-    const target = enllac.getAttribute("data-target");
-    mostra(target);
+Array.from(enllac).forEach(function (e) {
+  e.addEventListener("click", function () {
+    const target = e.getAttribute("data-target");
+    if (target) {
+      mostra(target);
+    }
   });
 });
 

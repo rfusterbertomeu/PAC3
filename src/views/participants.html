@@ -1,69 +1,62 @@
-<div class="participants pagina" id="participants">
-  <h1 class="participants__titol text-blue-600">Membres destacats del club AnisTenis</h1>
-  <div class="participants__contenidor">
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_1.png" alt="Imatge de Laia Montserrat">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-center">Laia Montserrat</div>
-        <p class="text-gray-700 text-base text-center">Edat: 31</p>
-        <p class="text-gray-700 text-base text-center">Victories: 20</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_2.png" alt="Imatge de Vicent Castelló">
-      <div class="px-6 py-4">
-        <h5 class="font-bold text-xl mb-2 text-center">Vicent Castelló</h5>
-        <p class="text-gray-700 text-base text-center">Edat: 28</p>
-        <p class="text-gray-700 text-base text-center">Victories: 15</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_3.png" alt="Imatge de Pau Roca">
-      <div class="px-6 py-4">
-        <h5 class="font-bold text-xl mb-2 text-center">Pau Roca</h5>
-        <p class="text-gray-700 text-base text-center">Edat: 25</p>
-        <p class="text-gray-700 text-base text-center">Victories: 12</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_4.png" alt="Imatge de Elena Solana">
-      <div class="px-6 py-4">
-        <h5 class="font-bold text-xl mb-2 text-center">Elena Solana</h5>
-        <p class="text-gray-700 text-base text-center">Edat: 22</p>
-        <p class="text-gray-700 text-base text-center">Victories: 18</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_5.png" alt="Imatge de Aitana Giner">
-      <div class="px-6 py-4">
-        <h5 class="font-bold text-xl mb-2 text-center">Aitana Giner</h5>
-        <p class="text-gray-700 text-base text-center">Edat: 26</p>
-        <p class="text-gray-700 text-base text-center">Victories: 14</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_6.png" alt="Imatge de Sara Taronger">
-      <div class="px-6 py-4">
-        <h5 class="font-bold text-xl mb-2 text-center">Sara Taronger</h5>
-        <p class="text-gray-700 text-base text-center">Edat: 24</p>
-        <p class="text-gray-700 text-base text-center">Victories: 17</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_7.png" alt="Imatge de Alex Salort">
-      <div class="px-6 py-4">
-        <h5 class="font-bold text-xl mb-2 text-center">Alex Salort</h5>
-        <p class="text-gray-700 text-base text-center">Edat: 31</p>
-        <p class="text-gray-700 text-base text-center">Victories: 15</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="w-full object-cover" src="/src/assets/images/participant_8.png" alt="Imatge de Maria Bertomeu">
-      <div class="px-6 py-4">
-        <h5 class="font-bold text-xl mb-2 text-center">Maria Bertomeu</h5>
-        <p class="text-gray-700 text-base text-center">Edat: 25</p>
-        <p class="text-gray-700 text-base text-center">Victories: 18</p>
-      </div>
-    </div>
+<div class="pagina bg-violet-100 px-12 pb-10" id="participants">
+  <h1 class="py-4 text-3xl font-bold tracking-tight text-secondary text-center sm:text-4xl">Membres destacats del club
+    AnisTenis</h1>
+  <div class="grid gap-x-8 gap-y-12 sm:grid-cols-1 sm:gap-y-16 md:grid-cols-2 md:gap-y-12 lg:grid-cols-3 lg:gap-y-10">
+    <include src="./views/components/card.html" locals='{
+      "title": "Laia Montserrat",
+      "text_1": "Edat: 31",
+      "text_2":"Victories: 20",
+      "img_url":"/src/assets/images/participant_1.png"
+      }'>
+    </include>
+    <include src="./views/components/card.html" locals='{
+      "title": "Vicent Castelló",
+      "text_1": "Edat: 28",
+      "text_2":"Victories: 15",
+      "img_url":"/src/assets/images/participant_2.png"
+      }'>
+    </include>
+    <include src="./views/components/card.html" locals='{
+      "title": "Pau Roca",
+      "text_1": "Edat: 25",
+      "text_2":"Victories: 12",
+      "img_url":"/src/assets/images/participant_3.png"
+      }'>
+    </include>
+    <include src="./views/components/card.html" locals='{
+      "title": "Elena Solana",
+      "text_1": "Edat: 22",
+      "text_2":"Victories: 18",
+      "img_url":"/src/assets/images/participant_4.png"
+      }'>
+    </include>
+    <include src="./views/components/card.html" locals='{
+      "title": "Aitana Giner",
+      "text_1": "Edat: 26",
+      "text_2":"Victories: 14",
+      "img_url":"/src/assets/images/participant_5.png"
+      }'>
+    </include>
+    <include src="./views/components/card.html" locals='{
+      "title": "Sara Taronger",
+      "text_1": "Edat: 24",
+      "text_2":"Victories: 17",
+      "img_url":"/src/assets/images/participant_6.png"
+      }'>
+    </include>
+    <include src="./views/components/card.html" locals='{
+      "title": "Alex Salort",
+      "text_1": "Edat: 31",
+      "text_2":"Victories: 15",
+      "img_url":"/src/assets/images/participant_7.png"
+      }'>
+    </include>
+    <include src="./views/components/card.html" locals='{
+      "title": "Maria Bertomeu",
+      "text_1": "Edat: 25",
+      "text_2":"Victories: 18",
+      "img_url":"/src/assets/images/participant_8.png"
+      }'>
+    </include>
   </div>
 </div>
