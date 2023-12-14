@@ -12,7 +12,16 @@ module.exports = {
         text: "Montserrat Variable, sans-serif",
         title: "Outfit Variable, sans-serif",
       },
+      
     },
+    fontSize:{
+      'xxs':['0.7rem', '1rem'],
+    },
+    screens: {
+      'sm': { 'max': '767px' },
+      'md': { 'min': '768px', 'max': '1023px' },
+      'lg': '1024px'
+    }
   },
   plugins: [],
 };
