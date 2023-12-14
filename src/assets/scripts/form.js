@@ -2,10 +2,10 @@ import $ from "jquery";
 
 $(function() {
     
-  $(".form__alerta").hide();
+  $(".alert").hide();
   var formulari = $(".form")
-  var success = $(".form__alerta--success");
-  var fail = $(".form__alerta--fail");
+  var success = $("#alert-success");
+  var fail = $("#alert-error");
 
   const handleSubmit = (event) => {
     event.preventDefault();

@@ -5,3 +5,7 @@
 .card {
   @apply max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden;
 }
+
+.alert {
+  @apply flex items-center gap-3 mb-4 rounded-lg px-3 py-5 text-gray-900;
+}
