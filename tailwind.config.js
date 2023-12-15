@@ -11,11 +11,9 @@ module.exports = {
       fontFamily: {
         text: "Montserrat Variable, sans-serif",
         title: "Outfit Variable, sans-serif",
-      },
-      
-    },
-    fontSize:{
+      },fontSize:{
       'xxs':['0.7rem', '1rem'],
+     },     
     },
     screens: {
       'sm': { 'max': '767px' },

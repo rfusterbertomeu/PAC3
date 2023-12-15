@@ -1,7 +1,8 @@
 <div class="pagina bg-violet-100 px-12 sm:px-4 pb-10" id="contacte">
-  <div class="flex flex-col lg:flex-row gap-20 justify-around w-9/12 mt-3">
+  <div class="flex flex-col lg:flex-row gap-20 justify-around w-9/12 md:w-10/12 sm:w-full mt-3">
     <div class="shadow-lg rounded-lg p-10">
-      <h1 class="py-4 text-3xl font-bold tracking-tight text-secondary text-center sm:text-4xl">Contacta amb nosaltres!
+      <h1 class="py-4 text-3xl md:text-2xl sm:text-xl font-bold tracking-tight text-secondary text-center">Contacta amb
+        nosaltres!
       </h1>
       <form name="contacte__form" method="post" netlify>
         <include src="./views/components/input.html" locals='{
@@ -48,13 +49,15 @@
             Subscriu-te i reb totes les novetats al correu electrònic!
           </label>
         </div>
-        <div class="flex justify-center"><button
+        <div class="flex justify-center my-6">
+          <button
             class="text-secondary font-bold border-secondary rounded-lg border-2 hover:bg-secondary hover:text-white block px-3 py-2 text-end font-medium"
-            type="submit">Enviar</button></div>
+            type="submit">Enviar</button>
+        </div>
 
         <div class="alert bg-lime-100" role="alert" id="alert-success">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-8 h-8 text-lime-600">
+            stroke="currentColor" class="w-8 h-8  sm:w-9 sm:h-9 text-lime-600">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
@@ -63,7 +66,7 @@
         </div>
         <div class="alert bg-red-100" role="alert" id="alert-error">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-8 h-8 text-red-600">
+            stroke="currentColor" class="w-8 h-8 sm:w-9 sm:h-9 text-red-600">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
           </svg>
@@ -72,10 +75,11 @@
       </form>
     </div>
     <div class="shadow-lg rounded-lg p-10">
-      <h1 class="py-4 text-3xl font-bold tracking-tight text-secondary text-center sm:text-4xl">On pots trobar-nos?</h1>
+      <h1 class="py-4 text-3xl md:text-2xl sm:text-xl font-bold tracking-tight text-secondary text-center">On pots
+        trobar-nos?</h1>
       <div class="my-3">
-        <div class="flex gap-2 font-semibold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <div class="flex gap-2 text-lg font-semibold"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
           </svg>
@@ -84,7 +88,7 @@
         <p class="mx-10"> Pavelló Municipal d'Esports</p>
       </div>
       <div class="my-3">
-        <div class="flex gap-2 font-semibold">
+        <div class="flex gap-2 text-lg font-semibold">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -95,7 +99,7 @@
         <p class="mx-10">Carrer de Gabriel Miró, 32A, 46780 Oliva, Valencia</p>
       </div>
       <div class="my-3">
-        <div class="flex gap-2 font-semibold">
+        <div class="flex gap-2 text-lg font-semibold">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -106,7 +110,7 @@
         <p class="mx-10"> +34 123 456 789</p>
       </div>
       <div class="flex justify-center">
-        <iframe class="w-full"
+        <iframe class="w-full h-64 lg:h-72"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12416.129938710532!2d-0.113136!3d38.923235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e660466c80e1%3A0xe170ad65a076cbbd!2sPavell%C3%B3%20Municipal%20d&#39;Esports%20(Poliesportiu)!5e0!3m2!1sca!2ses!4v1702558216878!5m2!1sca!2ses"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
