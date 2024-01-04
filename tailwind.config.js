@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         uoc: "#000078",
         primary: {
-          transparent: "#ede9fe",
+          transparent: "#f8f5ff",
           light: "#f2ebff",
           DEFAULT: "#be9bff",
         },
